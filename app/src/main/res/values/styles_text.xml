@@ -1,0 +1,139 @@
+<resources>
+
+    <style name="AQText">
+        <item name="android:textColor">@color/color_262626</item>
+    </style>
+
+    <!-- sans_bold -->
+    <style name="AQText.SansBold">
+        <item name="android:fontFamily">@font/sans_bold</item>
+    </style>
+
+    <style name="AQText.SansBold.28">
+        <item name="android:textSize">@dimen/sp_28</item>
+    </style>
+
+    <style name="AQText.SansBold.24">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="AQText.SansBold.20">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="AQText.SansBold.18">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="AQText.SansBold.16">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="AQText.SansBold.14">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="AQText.SansBold.13">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="AQText.SansBold.12">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="AQText.SansBold.11">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="AQText.SansBold.10">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+
+    <!-- sans_semi_bold -->
+    <style name="AQText.SansSemiBold">
+        <item name="android:fontFamily">@font/sans_semi_bold</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.28">
+        <item name="android:textSize">@dimen/sp_28</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.24">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.20">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.18">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.16">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.14">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.13">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.12">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.11">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="AQText.SansSemiBold.10">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <!-- sans_regular -->
+    <style name="AQText.SansRegular">
+        <item name="android:fontFamily">@font/sans_regular</item>
+    </style>
+
+    <style name="AQText.SansRegular.24">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="AQText.SansRegular.20">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="AQText.SansRegular.18">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="AQText.SansRegular.16">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="AQText.SansRegular.14">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="AQText.SansRegular.13">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="AQText.SansRegular.12">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="AQText.SansRegular.11">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="AQText.SansRegular.10">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+</resources>

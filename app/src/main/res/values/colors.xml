@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="color_main">#1578FF</color>
+    <color name="color_262626">#262626</color>
+    <color name="color_8C8C8C">#8C8C8C</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+
+    <color name="color_CCFFFFFF">#CCFFFFFF</color>  <!--80%-->
+    <color name="color_99FFFFFF">#99FFFFFF</color> <!--60%-->
+    <color name="color_7FFFFFFF">#7FFFFFFF</color> <!--50%-->
+    <color name="color_66FFFFFF">#66FFFFFF</color> <!--40%-->
+    <color name="color_4CFFFFFF">#4CFFFFFF</color> <!--30%-->
+    <color name="color_40FFFFFF">#40FFFFFF</color> <!--25%-->
+    <color name="color_33FFFFFF">#33FFFFFF</color> <!--20%-->
+    <color name="color_26FFFFFF">#26FFFFFF</color> <!--15%-->
+    <color name="color_19FFFFFF">#19FFFFFF</color> <!--10%-->
+    <color name="color_10FFFFFF">#10FFFFFF</color> <!--6%-->
+
+    <color name="color_7F000000">#7F000000</color>
+
+</resources>
