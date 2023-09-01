@@ -10,7 +10,9 @@ import androidx.fragment.app.viewModels
 import com.sxiaozhi.debt.core.base.BaseFragment
 import com.sxiaozhi.debt.databinding.FragmentDashboardBinding
 import com.sxiaozhi.debt.viewmodels.DashboardViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DashboardFragment: BaseFragment<FragmentDashboardBinding>()  {
 
     override fun getToolbar(): Toolbar? = null

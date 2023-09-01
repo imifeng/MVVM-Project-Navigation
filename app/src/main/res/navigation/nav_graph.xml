@@ -3,29 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/splashFragment">
+
+    <include app:graph="@navigation/nav_tab" />
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.sxiaozhi.debt.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/splashFragment"
+        android:name="com.sxiaozhi.debt.ui.splash.SplashFragment"
+        android:label="SplashFragment">
+
+        <action
+            android:id="@+id/action_splashFragment_to_tabFragment"
+            app:destination="@id/tabFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.sxiaozhi.debt.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/tabFragment"
+        android:name="com.sxiaozhi.debt.ui.main.TabFragment"
+        tools:layout="@layout/fragment_tab"
+        android:label="TabFragment" >
 
-    <fragment
-        android:id="@+id/navigation_calculator"
-        android:name="com.sxiaozhi.debt.ui.profile.ProfileFragment"
-        android:label="@string/title_calculator"
-        tools:layout="@layout/fragment_profile" />
+    </fragment>
 
-    <fragment
-        android:id="@+id/navigation_profile"
-        android:name="com.sxiaozhi.debt.ui.profile.ProfileFragment"
-        android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" />
 </navigation>

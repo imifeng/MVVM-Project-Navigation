@@ -10,7 +10,9 @@ import androidx.fragment.app.viewModels
 import com.sxiaozhi.debt.core.base.BaseFragment
 import com.sxiaozhi.debt.databinding.FragmentCalculatorBinding
 import com.sxiaozhi.debt.viewmodels.CalculatorViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CalculatorFragment: BaseFragment<FragmentCalculatorBinding>()  {
 
     override fun getToolbar(): Toolbar? = null

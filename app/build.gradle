@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -33,6 +35,47 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    //自定义打包时apk名称
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->// each 改为 all
+            def date = new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+08"))
+            def fileName = "${date}_LoveTalk_${productFlavors[0].name}_${versionName}.apk"
+            def outFile = output.outputFile
+            if (outFile != null && outFile.name.endsWith('.apk')) {
+                outputFileName = fileName // output.outputFile 改为 outputFileName
+            }
+        }
+    }
+
+    //多渠道打包
+    flavorDimensions "default"
+    productFlavors {
+        all {
+            buildConfigField "String", "API_URL", "\"http://wifi.3xiaozhi.com/\""
+        }
+        baidu {
+        }
+        t360 {
+        }
+        pphelper {
+        }
+        cool {
+        }
+//        meizu {
+//        }
+//        xiaomi {
+//        }
+//        huawei {
+//        }
+//        oppo {
+//        }
+//        vivo {
+//        }
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
 }
 
 dependencies {
@@ -48,4 +91,23 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+
+    // retrofit2
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.10.0"
+
+    // moshi
+    implementation "com.squareup.moshi:moshi:1.14.0"
+    implementation "com.squareup.moshi:moshi-kotlin:1.14.0"
+//    implementation "com.squareup.moshi:moshi-adapters:$moshi_version"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.14.0"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:4.13.2"
+    kapt "com.github.bumptech.glide:compiler:4.13.2"
+    implementation "jp.wasabeef:glide-transformations:4.3.0"
 }

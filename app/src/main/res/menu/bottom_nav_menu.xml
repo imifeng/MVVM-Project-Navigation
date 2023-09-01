@@ -20,5 +20,4 @@
         android:id="@+id/navigation_profile"
         android:icon="@mipmap/ic_tab_mine"
         android:title="@string/title_profile" />
-
 </menu>

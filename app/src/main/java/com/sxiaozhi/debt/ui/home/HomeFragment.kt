@@ -10,7 +10,9 @@ import androidx.fragment.app.viewModels
 import com.sxiaozhi.debt.core.base.BaseFragment
 import com.sxiaozhi.debt.databinding.FragmentHomeBinding
 import com.sxiaozhi.debt.viewmodels.HomeViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     override fun getToolbar(): Toolbar = binding.toolbar

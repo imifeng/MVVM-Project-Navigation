@@ -25,9 +25,15 @@ import com.sxiaozhi.debt.databinding.FragmentBaseBinding
 import com.sxiaozhi.debt.databinding.ToastCommonBinding
 import com.sxiaozhi.debt.utils.KeyboardController
 import com.sxiaozhi.debt.utils.Logger
+import com.sxiaozhi.debt.utils.SharedPrefService
+import dagger.hilt.android.AndroidEntryPoint
 import java.io.File
+import javax.inject.Inject
 
 abstract class BaseFragment<VB : ViewBinding> : Fragment() {
+
+    @Inject
+    lateinit var sharedPrefService: SharedPrefService
 
     open val softInputMode: Int
         get() = -1
@@ -248,4 +254,20 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
         }.show()
     }
 
+    fun checkLoginAuth(callback: () -> Unit) {
+        if (sharedPrefService.isLoginAuth()) {
+            callback.invoke()
+        } else {
+            // login
+            gotoLoginAuth()
+        }
+    }
+
+    fun gotoLoginAuth() {
+//        sp.logout()
+//        val intent = Intent(this, LoginActivity::class.java)
+//        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+//        startActivity(intent)
+//        finish()
+    }
 }

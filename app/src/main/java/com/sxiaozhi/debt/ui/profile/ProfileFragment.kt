@@ -10,7 +10,9 @@ import androidx.fragment.app.viewModels
 import com.sxiaozhi.debt.core.base.BaseFragment
 import com.sxiaozhi.debt.databinding.FragmentProfileBinding
 import com.sxiaozhi.debt.viewmodels.ProfileViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ProfileFragment : BaseFragment<FragmentProfileBinding>() {
 
     override fun getToolbar(): Toolbar? {
