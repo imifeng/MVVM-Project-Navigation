@@ -5,11 +5,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
+    <color name="translucent">#7F000000</color>
+    <color name="color_status_bar">#33000000</color>
 
     <color name="color_main">#1578FF</color>
     <color name="color_262626">#262626</color>
     <color name="color_8C8C8C">#8C8C8C</color>
     <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_FAFAFA">#FAFAFA</color>
 
     <color name="color_CCFFFFFF">#CCFFFFFF</color>  <!--80%-->
     <color name="color_99FFFFFF">#99FFFFFF</color> <!--60%-->
@@ -21,7 +24,5 @@
     <color name="color_26FFFFFF">#26FFFFFF</color> <!--15%-->
     <color name="color_19FFFFFF">#19FFFFFF</color> <!--10%-->
     <color name="color_10FFFFFF">#10FFFFFF</color> <!--6%-->
-
-    <color name="color_7F000000">#7F000000</color>
 
 </resources>
