@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">DebtLaw</string>
-    <string name="title_home">首页</string>
-    <string name="title_dashboard">学法</string>
-    <string name="title_calculator">计算器</string>
+    <string name="app_name">Somking</string>
+    <string name="title_home">Somking</string>
+    <string name="title_dashboard">工具</string>
+    <string name="title_calculator">科普</string>
     <string name="title_profile">我的</string>
 
     <string name="access_denied">拒绝访问</string>

@@ -1,0 +1,6 @@
+ext {
+    RELEASE_STORE_FILE = "test.keystore"
+    RELEASE_STORE_PASSWORD = "202121"
+    RELEASE_KEY_ALIAS = "test"
+    RELEASE_KEY_PASSWORD = "202121"
+}

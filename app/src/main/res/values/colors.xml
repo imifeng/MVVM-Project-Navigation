@@ -7,12 +7,16 @@
     <color name="transparent">#00000000</color>
     <color name="translucent">#7F000000</color>
     <color name="color_status_bar">#33000000</color>
+    <color name="color_navigation_bar">#ff353535</color>
 
-    <color name="color_main">#1578FF</color>
+    <color name="color_main">#FFD401</color>
     <color name="color_262626">#262626</color>
     <color name="color_8C8C8C">#8C8C8C</color>
     <color name="color_F5F5F5">#F5F5F5</color>
     <color name="color_FAFAFA">#FAFAFA</color>
+    <color name="color_F5A631">#F5A631</color>
+    <color name="color_FFEC59">#FFEC59</color>
+    <color name="color_105FCC">#105FCC</color>
 
     <color name="color_CCFFFFFF">#CCFFFFFF</color>  <!--80%-->
     <color name="color_99FFFFFF">#99FFFFFF</color> <!--60%-->

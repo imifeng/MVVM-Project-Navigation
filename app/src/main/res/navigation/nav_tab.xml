@@ -3,29 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/view_tab"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
+
+    <include app:graph="@navigation/nav_debt_ask" />
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sxiaozhi.debt.ui.home.HomeFragment"
+        android:name="com.sxiaozhi.somking.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_HomeFragment_to_DebtAskFragment"
+            app:destination="@id/nav_ask" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.sxiaozhi.debt.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_tools"
+        android:name="com.sxiaozhi.somking.ui.tools.ToolsFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_tools" />
 
     <fragment
-        android:id="@+id/navigation_calculator"
-        android:name="com.sxiaozhi.debt.ui.calculator.CalculatorFragment"
+        android:id="@+id/navigation_science"
+        android:name="com.sxiaozhi.somking.ui.science.ScienceFragment"
         android:label="@string/title_calculator"
-        tools:layout="@layout/fragment_calculator" />
+        tools:layout="@layout/fragment_science" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.sxiaozhi.debt.ui.profile.ProfileFragment"
+        android:name="com.sxiaozhi.somking.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
