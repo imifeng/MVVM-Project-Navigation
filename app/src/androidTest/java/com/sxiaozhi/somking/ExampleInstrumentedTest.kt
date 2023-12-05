@@ -1,4 +1,4 @@
-package com.sxiaozhi.somking
+package com.sxiaozhi.fragment
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

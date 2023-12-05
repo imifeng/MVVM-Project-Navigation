@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sxiaozhi.somking.ui.home.HomeFragment"
+        android:name="com.sxiaozhi.fragment.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
 
@@ -20,19 +20,19 @@
 
     <fragment
         android:id="@+id/navigation_tools"
-        android:name="com.sxiaozhi.somking.ui.tools.ToolsFragment"
+        android:name="com.sxiaozhi.fragment.ui.tools.ToolsFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
         android:id="@+id/navigation_science"
-        android:name="com.sxiaozhi.somking.ui.science.ScienceFragment"
+        android:name="com.sxiaozhi.fragment.ui.science.ScienceFragment"
         android:label="@string/title_calculator"
         tools:layout="@layout/fragment_science" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.sxiaozhi.somking.ui.profile.ProfileFragment"
+        android:name="com.sxiaozhi.fragment.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 

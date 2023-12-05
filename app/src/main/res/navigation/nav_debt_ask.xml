@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/debtAskFragment"
-        android:name="com.sxiaozhi.somking.ui.home.DebtAskFragment"
+        android:name="com.sxiaozhi.fragment.ui.home.DebtAskFragment"
         android:label="DebtAskFragment" />
 
 </navigation>

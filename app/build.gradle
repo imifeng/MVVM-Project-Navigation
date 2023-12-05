@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.sxiaozhi.somking'
+    namespace 'com.sxiaozhi.fragment'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.sxiaozhi.somking"
+        applicationId "com.sxiaozhi.fragment"
         minSdk 24
         targetSdk 33
         versionCode 1

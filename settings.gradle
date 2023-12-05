@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Smoking"
+rootProject.name = "MVVM-Project-Fragment"
 include ':app'

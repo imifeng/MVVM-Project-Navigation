@@ -1,4 +1,4 @@
-package com.sxiaozhi.somking
+package com.sxiaozhi.fragment
 
 import org.junit.Test
 

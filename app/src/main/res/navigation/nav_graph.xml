@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.sxiaozhi.somking.ui.splash.SplashFragment"
+        android:name="com.sxiaozhi.fragment.ui.splash.SplashFragment"
         android:label="SplashFragment">
 
         <action
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/tabFragment"
-        android:name="com.sxiaozhi.somking.ui.main.TabFragment"
+        android:name="com.sxiaozhi.fragment.ui.main.TabFragment"
         tools:layout="@layout/fragment_tab"
         android:label="TabFragment" >
     </fragment>
