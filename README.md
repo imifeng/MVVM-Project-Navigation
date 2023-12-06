@@ -1,9 +1,11 @@
-# MVVM-Fragment-Project (Kotlin)
+# MVVM-Navigation-Project (Kotlin)
 
-Hilt + ViewBinding + ViewModel + LiveData + fragment
+Navigation + Hilt + ViewBinding + ViewModel + LiveData
 
 
 ## Libraries Used
+
+* 使用[Navigation](https://developer.android.com/guide/navigation?authuser=1)实现页面切换
 
 * 使用[ Hilt ](https://developer.android.com/training/dependency-injection/hilt-android)实现依赖项注入
 
