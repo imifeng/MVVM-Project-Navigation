@@ -25,10 +25,10 @@ object Constant {
 
     val tabNavigationList: List<Int>
         get() = listOf(
-            R.id.navigation_home,
-            R.id.navigation_tools,
-            R.id.navigation_science,
-            R.id.navigation_profile,
+            R.id.homeFragment,
+            R.id.toolsFragment,
+            R.id.findFragment,
+            R.id.profileFragment,
         )
 }
 

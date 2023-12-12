@@ -8,20 +8,20 @@ import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.viewModels
 import com.sxiaozhi.fragment.core.base.BaseFragment
-import com.sxiaozhi.fragment.databinding.FragmentScienceBinding
+import com.sxiaozhi.fragment.databinding.FragmentFindBinding
 import com.sxiaozhi.fragment.viewmodels.CalculatorViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ScienceFragment: BaseFragment<FragmentScienceBinding>()  {
+class FindFragment: BaseFragment<FragmentFindBinding>()  {
 
     override fun getToolbar(): Toolbar? = null
 
     override fun bindFragment(
         inflater: LayoutInflater,
         container: ViewGroup
-    ): FragmentScienceBinding {
-        return FragmentScienceBinding.inflate(inflater, container, true)
+    ): FragmentFindBinding {
+        return FragmentFindBinding.inflate(inflater, container, true)
     }
 
     override val windowInsetsCompatView: View

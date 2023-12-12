@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Quitsmoking" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Navigation" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/color_main</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -12,17 +12,11 @@
 
         <item name="android:windowBackground">@color/color_navigation_bar</item>
         <item name="android:navigationBarColor">@color/color_navigation_bar</item>
-
     </style>
 
 
-    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+    <style name="Theme.App.Starting" parent="Theme.Navigation">
         <item name="android:windowBackground">@drawable/bg_gradient_splash</item>
-<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>-->
-<!--        <item name="windowSplashScreenIconBackgroundColor">@color/color_262626</item>-->
-        <item name="postSplashScreenTheme">@style/Theme.Quitsmoking</item>
     </style>
-
-
 
 </resources>

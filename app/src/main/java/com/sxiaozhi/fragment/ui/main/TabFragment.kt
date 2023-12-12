@@ -48,7 +48,7 @@ class TabFragment : BaseFragment<FragmentTabBinding>(), NavController.OnDestinat
                 R.id.navigation_tools -> {
 //                    onNavDestinationSelected(item, navHostFragment.navController)
                 }
-                R.id.navigation_science -> {
+                R.id.navigation_find -> {
 //                    onNavDestinationSelected(item, navHostFragment.navController)
                 }
                 R.id.navigation_profile -> {

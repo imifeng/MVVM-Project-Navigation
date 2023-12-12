@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <!--使用网络-->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
     <uses-permission android:name="android.permission.INTERNET" />
     <!--相机权限-->
     <uses-permission android:name="android.permission.CAMERA" />
@@ -13,7 +16,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/APP_NAME"
         android:supportsRtl="true"
         android:theme="@style/Theme.App.Starting"
         android:usesCleartextTraffic="true"
@@ -21,8 +24,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Quitsmoking">
+            android:label="@string/APP_NAME"
+            android:theme="@style/Theme.Navigation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

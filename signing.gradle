@@ -3,4 +3,9 @@ ext {
     RELEASE_STORE_PASSWORD = "202121"
     RELEASE_KEY_ALIAS = "test"
     RELEASE_KEY_PASSWORD = "202121"
+
+    // "common", "somewhat", "annoying"
+    productNameForCommon = "Common-Nav-App"
+    productNameForSomewhat = "Somewhat-Nav-App"
+    productNameForAnnoying = "Annoying-Nav-App"
 }

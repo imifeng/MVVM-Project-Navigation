@@ -13,7 +13,7 @@ android {
     defaultConfig {
         applicationId "com.sxiaozhi.fragment"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0.0"
 
@@ -59,11 +59,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
     buildFeatures {
         viewBinding true
@@ -73,7 +73,7 @@ android {
     applicationVariants.all { variant ->
         variant.outputs.all { output ->// each 改为 all
             def date = new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+08"))
-            def fileName = "${date}_Somking_${productFlavors[0].name}_${versionName}.apk"
+            def fileName = "${date}_Nav_${productFlavors[0].name}_${versionName}.apk"
             def outFile = output.outputFile
             if (outFile != null && outFile.name.endsWith('.apk')) {
                 outputFileName = fileName // output.outputFile 改为 outputFileName
@@ -82,32 +82,26 @@ android {
     }
 
     //多渠道打包
-    flavorDimensions "default"
+    flavorDimensions "channel"
     productFlavors {
-        all {
+        configureEach {
             buildConfigField "String", "API_URL", "\"http://wifi.3xiaozhi.com/\""
         }
-        baidu {
+        common {
+            dimension 'channel'
+            resValue "string", "APP_NAME", findProperty("productNameForCommon") as String
         }
-        t360 {
+        somewhat {
+            dimension 'channel'
+            resValue "string", "APP_NAME", findProperty("productNameForSomewhat") as String
         }
-        pphelper {
+        annoying {
+            dimension 'channel'
+            resValue "string", "APP_NAME", findProperty("productNameForAnnoying") as String
         }
-        cool {
-        }
-//        meizu {
-//        }
-//        xiaomi {
-//        }
-//        huawei {
-//        }
-//        oppo {
-//        }
-//        vivo {
-//        }
     }
     productFlavors.all {
-        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        flavor -> flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
     }
 }
 
@@ -129,8 +123,6 @@ dependencies {
 
     implementation "com.google.dagger:hilt-android:2.46.1"
     kapt "com.google.dagger:hilt-compiler:2.46.1"
-    // Splash
-    implementation 'androidx.core:core-splashscreen:1.0.0'
 
     // retrofit2
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
